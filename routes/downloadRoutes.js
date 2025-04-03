@@ -1,5 +1,4 @@
 const express = require("express");
-const fs = require("fs").promises;
 const { generateCsv } = require("../services/csvService");
 const logger = require("../utils/logger");
 const path = require("path");
