@@ -58,7 +58,7 @@ This starts the server on **http://localhost:3000/**.
 
 ### **Download University Data (CSV)**
 #### **GET `/download`**
-- Returns the latest `.data/universities.csv` file.
+- Returns the latest `universities.csv` file.
 - **Example Request:**
   ```sh
   curl -O http://localhost:3000/download
