@@ -10,8 +10,6 @@ This project is an **ETL (Extract, Transform, Load) API** that:
 - REST API with **Express.js**
 - **Pino** logging for debugging
 - **Cron job** for automatic daily data refresh
-- File storage in `.data/` (excluded from Git)
-
 ## **Installation**
 
 ### **Clone the repository**
