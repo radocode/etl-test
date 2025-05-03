@@ -12,7 +12,7 @@ router.get("/fetch", async (req, res) => {
             return res.status(400).json({ error: "Missing name or country parameters." });
         }
 
-        await fetchAndStoreData(name, country);
+        fetchAndStoreData(name, country);
         res.json({ message: "Data fetched and stored successfully!" });
     } catch (error) {
         logger.error({ error: error.message }, "Fetch request failed");

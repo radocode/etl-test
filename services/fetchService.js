@@ -9,7 +9,7 @@ const API_URL = "http://universities.hipolabs.com/search";
 async function fetchAndStoreData(name, country) {
     try {
         const universities = await fetchWithRetry(`${API_URL}?name=${name}&country=${country}`);
-        await fs.writeFile(DATA_FILE, JSON.stringify(universities, null, 2));
+        fs.writeFile(DATA_FILE, JSON.stringify(universities, null, 2));
         logger.info(`Fetched ${universities.length} universities and stored in ${DATA_FILE}`);
 
         return universities;
